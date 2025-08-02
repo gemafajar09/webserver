@@ -2,4 +2,5 @@ php/*
 !php/readme.md
 mysql/*
 !mysql/readme.md
-apache/Apache24
+apache/*
+!apache/readme.md
