@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Server Control Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-200 text-gray-800 min-h-screen py-10 px-4">
+
+    <h1 class="text-4xl font-extrabold text-center mb-12 text-gray-700">🚀 Server Control Panel</h1>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="max-w-3xl mx-auto mb-6">
+                <ul class="bg-green-50 border border-green-400 text-green-800 text-sm rounded-lg p-4 list-disc list-inside shadow">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Service Panels -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+        
+        <!-- Apache Panel -->
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition flex flex-col">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">🔥 Apache</h2>
+
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-sm text-gray-600">Status:</span>
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full 
+                    {% if service_status.apache %} bg-green-100 text-green-700 
+                    {% else %} bg-red-100 text-red-700 {% endif %}">
+                    {% if service_status.apache %} Running ({{ active_versions.apache }}) {% else %} Stopped {% endif %}
+                </span>
+            </div>
+
+            <!-- Form Pilih Versi Apache dan Start -->
+            <form action="/start_apache" method="post" class="space-y-3 mb-4">
+                <label for="apache_version" class="block text-sm font-medium text-gray-700">Pilih Versi Apache:</label>
+                <select name="apache_version" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-green-500">
+                    {% for ver in apache_versions %}
+                        <option value="{{ ver }}" {% if active_versions.apache == ver %}selected{% endif %}>{{ ver }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 transition">
+                    ▶️ Jalankan Apache
+                </button>
+            </form>
+
+            <!-- Tombol Stop Apache -->
+            {% if service_status.apache %}
+                <form action="/stop_apache" method="post" class="mb-4">
+                    <button type="submit" class="w-full px-4 py-2 bg-red-500 text-white text-sm font-medium rounded hover:bg-red-600 transition">
+                        ⛔ Hentikan Apache
+                    </button>
+                </form>
+            {% endif %}
+
+            <!-- Form Install Apache -->
+            <form method="post" action="{{ url_for('web_install_apache') }}" class="space-y-4 mt-auto">
+                <label for="apache_version" class="block text-sm font-medium text-gray-700">Install Apache dari Link:</label>
+                <select name="apache_version" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-green-500">
+                    {% for ver in apache_download_links %}
+                        <option value="{{ ver }}">{{ ver }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="w-full px-4 py-2 bg-green-500 text-white text-sm font-medium rounded hover:bg-green-600 transition">
+                    🛠️ Install Apache
+                </button>
+            </form>
+        </div>
+
+        <!-- PHP Panel -->
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition flex flex-col">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">🧩 PHP</h2>
+            
+            <!-- Status PHP -->
+            <div class="flex items-center mb-4">
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full 
+                    {% if active_versions.php %} bg-green-100 text-green-700 
+                    {% else %} bg-red-100 text-red-700 {% endif %}">
+                    {% if active_versions.php %} Active ({{ active_versions.php }}) {% else %} Inactive {% endif %}
+                </span>
+            </div>
+
+            <!-- Form Switch PHP -->
+            <form action="/switch_php" method="post" class="space-y-4 mb-6">
+                <label for="php_version" class="block text-sm font-medium text-gray-700">Pilih Versi PHP:</label>
+                <select name="php_version" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500">
+                    {% for ver in php_versions %}
+                        <option value="{{ ver }}" {% if active_versions.php == ver %}selected{% endif %}>{{ ver }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 transition">
+                    🔁 Switch PHP
+                </button>
+            </form>
+
+
+            <!-- Form Install PHP dari Link -->
+            <form method="post" action="{{ url_for('web_install_php') }}" class="space-y-4">
+                <label for="php_version" class="block text-sm font-medium text-gray-700">Install PHP dari Link:</label>
+                <select name="php_version" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500">
+                    {% for ver in php_download_links.keys() %}
+                        <option value="{{ ver }}">{{ ver }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="w-full px-4 py-2 bg-green-500 text-white text-sm font-medium rounded hover:bg-green-600 transition">
+                    🛠️ Install PHP
+                </button>
+            </form>
+        </div>
+
+        <!-- MySQL Panel -->
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition flex flex-col">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">🛢 MySQL</h2>
+            <p class="text-xs mb-5"> user , password : [root , mysql]</p>
+
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-sm text-gray-600">Status:</span>
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full 
+                    {% if service_status.mysql %} bg-green-100 text-green-700 
+                    {% else %} bg-red-100 text-red-700 {% endif %}">
+                    {% if service_status.mysql %} Running ({{ active_versions.mysql }}) {% else %} Stopped {% endif %}
+                </span>
+            </div>
+
+            <!-- Form Pilih Versi MySQL dan Start -->
+            <form method="post" action="{{ url_for('web_start_mysql') }}" class="space-y-3 mb-4">
+                <label for="mysql_version" class="block text-sm font-medium text-gray-700">Pilih Versi MySQL:</label>
+                <select name="mysql_version" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500">
+                    {% for ver in mysql_download_links %}
+                        <option value="{{ ver }}" {% if active_versions.mysql == ver %}selected{% endif %}>{{ ver }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 transition">
+                    ▶️ Jalankan MySQL
+                </button>
+            </form>
+
+            <!-- Tombol Stop MySQL -->
+            {% if service_status.mysql %}
+                <form action="{{ url_for('web_stop_mysql') }}" method="post">
+                    <button type="submit" class="w-full px-4 py-2 bg-red-500 text-white text-sm font-medium rounded hover:bg-red-600 transition">
+                        ⛔ Hentikan MySQL
+                    </button>
+                </form>
+            {% endif %}
+
+            <!-- Form Install MySQL -->
+            <form method="post" action="{{ url_for('web_install_mysql') }}" class="space-y-4 mt-auto mb-3">
+                <label for="mysql_version" class="block text-sm font-medium text-gray-700">Install MySQL dari Link:</label>
+                <select name="mysql_version" required class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-green-500">
+                    {% for ver in mysql_download_links %}
+                        <option value="{{ ver }}">{{ ver }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="w-full px-4 py-2 bg-green-500 text-white text-sm font-medium rounded hover:bg-green-600 transition">
+                    🛠️ Install MySQL
+                </button>
+            </form>
+
+            <div class="mt-3">
+                <a href="http://localhost/database" target="_blank" 
+                    class="inline-block w-full px-4 py-2 bg-indigo-500 text-white text-sm font-medium rounded hover:bg-indigo-600 transition text-center">
+                    🌐 Buka Database
+                </a>
+            </div>
+        </div>
+
+        <!-- Speedtest Panel -->
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition flex flex-col justify-between">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">🌐 Cek Kecepatan Internet</h2>
+
+            {% if network_speed %}
+                <div class="space-y-2 mb-4">
+                    <p class="text-sm"><strong>Ping:</strong> <span class="text-green-600">{{ network_speed.ping }}</span></p>
+                    <p class="text-sm"><strong>Download:</strong> <span class="text-green-600">{{ network_speed.download }}</span></p>
+                    <p class="text-sm"><strong>Upload:</strong> <span class="text-green-600">{{ network_speed.upload }}</span></p>
+                </div>
+            {% else %}
+                <p class="text-gray-500 text-sm mb-4">Klik tombol di bawah untuk mengukur kecepatan internet Anda.</p>
+            {% endif %}
+
+            <form method="POST" action="{{ url_for('web_check_speed') }}" class="mt-auto">
+                <button type="submit" class="w-full px-4 py-2 bg-indigo-500 text-white text-sm font-medium rounded hover:bg-indigo-600 transition">
+                    🚀 Jalankan Speedtest
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Log Viewer -->
+    <div class="max-w-6xl mx-auto mt-8">
+        <div class="bg-black text-green-400 font-mono text-sm p-4 rounded-lg shadow-inner overflow-y-auto max-h-96">
+            <h2 class="text-white text-lg font-bold mb-2">🔥 Apache Log</h2>
+            <pre>{{ apache_log }}</pre>
+        </div>
+    </div>
+
+    <!-- MySQL Log -->
+    <div class="max-w-6xl mx-auto mt-8">
+        <div class="bg-black text-green-400 font-mono text-sm p-4 rounded-lg shadow-inner overflow-y-auto max-h-96">
+            <h2 class="text-white text-lg font-bold mb-2">🛢 MySQL Log</h2>
+            <pre>{{ mysql_log }}</pre>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+[Fri Aug 01 18:15:49.840583 2025] [authz_core:error] [pid 19804:tid 1236] [client ::1:64283] AH01630: client denied by server configuration: D:/server/apache/Apache24/docs
+[Fri Aug 01 18:15:51.248989 2025] [authz_core:error] [pid 19804:tid 1236] [client ::1:64283] AH01630: client denied by server configuration: D:/server/apache/Apache24/docs
+[Fri Aug 01 18:15:55.601483 2025] [authz_core:error] [pid 19804:tid 1236] [client ::1:64283] AH01630: client denied by server configuration: D:/server/apache/Apache24/docs
+[Fri Aug 01 18:15:57.744328 2025] [authz_core:error] [pid 19804:tid 1236] [client ::1:64283] AH01630: client denied by server configuration: D:/server/apache/Apache24/docs
