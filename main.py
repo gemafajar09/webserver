@@ -1,7 +1,20 @@
+import subprocess
+import sys
+import os
+
+def install_if_missing(module_name, pip_name=None):
+    try:
+        __import__(module_name)
+    except ImportError:
+        package = pip_name if pip_name else module_name
+        print(f"Menginstall package '{package}'...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install_if_missing("flask")
+install_if_missing("speedtest", "speedtest-cli")
+
 import shutil
 from flask import Flask, render_template, request, redirect, url_for, flash
-import subprocess
-import os
 import speedtest
 import zipfile
 import urllib.request

@@ -1,4 +1,5 @@
 # Note
+untuk settingan apache silahkan buka folder apache/apapche-2.4/conf/httpd.conf lalu ubah "Define SRVROOT "D:/server/apache/apache-2.4" dengan direktory tempat file apache tersimpan.
 
 ini masih belum selesai jika ingin mencoba silahkan. dan baca readme di setiap folder.
 

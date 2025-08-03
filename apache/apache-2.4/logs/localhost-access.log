@@ -942,3 +942,17 @@
 ::1 - - [02/Aug/2025:20:41:25 +0700] "GET /database/ HTTP/1.1" 200 5330
 ::1 - - [02/Aug/2025:20:41:35 +0700] "GET /database/ HTTP/1.1" 200 5104
 ::1 - - [02/Aug/2025:20:42:35 +0700] "-" 408 -
+::1 - - [02/Aug/2025:22:33:14 +0700] "GET /database/ HTTP/1.1" 200 5104
+::1 - - [02/Aug/2025:22:33:15 +0700] "GET /database/adminer-dark.css?v=2795939238 HTTP/1.1" 304 -
+::1 - - [02/Aug/2025:22:33:19 +0700] "POST /database/ HTTP/1.1" 302 -
+::1 - - [02/Aug/2025:22:33:19 +0700] "GET /database/?username=root HTTP/1.1" 200 9031
+::1 - - [02/Aug/2025:22:33:22 +0700] "GET /database/?username=root&db=lrv_billdomain HTTP/1.1" 200 24257
+::1 - - [02/Aug/2025:22:33:22 +0700] "GET /database/?username=root&db=lrv_billdomain&script=db HTTP/1.1" 200 2705
+::1 - - [02/Aug/2025:22:33:27 +0700] "GET /database/?username=root&db=lrv_billdomain HTTP/1.1" 200 24257
+::1 - - [02/Aug/2025:22:33:27 +0700] "GET /database/?username=root&db=lrv_billdomain&script=db HTTP/1.1" 200 2705
+::1 - - [02/Aug/2025:22:33:39 +0700] "GET /database/?username=root&db=lrv_billdomain&table=domains HTTP/1.1" 200 10133
+::1 - - [02/Aug/2025:22:33:41 +0700] "GET /database/?username=root&db=lrv_billdomain&select=domains HTTP/1.1" 200 22676
+::1 - - [02/Aug/2025:22:34:39 +0700] "-" 408 -
+::1 - - [02/Aug/2025:22:36:19 +0700] "-" 408 -
+::1 - - [03/Aug/2025:17:01:33 +0700] "GET / HTTP/1.1" 304 -
+::1 - - [03/Aug/2025:17:01:39 +0700] "GET /favicon.ico HTTP/1.1" 404 196
