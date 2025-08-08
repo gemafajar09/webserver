@@ -958,3 +958,139 @@
 ::1 - - [03/Aug/2025:17:01:39 +0700] "GET /favicon.ico HTTP/1.1" 404 196
 ::1 - - [03/Aug/2025:17:10:14 +0700] "-" 408 -
 ::1 - - [03/Aug/2025:17:10:14 +0700] "-" 408 -
+::1 - - [03/Aug/2025:17:19:15 +0700] "GET / HTTP/1.1" 304 -
+::1 - - [03/Aug/2025:17:20:15 +0700] "-" 408 -
+::1 - - [03/Aug/2025:17:40:52 +0700] "GET /database/ HTTP/1.1" 200 5162
+::1 - - [03/Aug/2025:17:40:54 +0700] "GET /database/adminer-dark.css?v=2795939238 HTTP/1.1" 304 -
+::1 - - [03/Aug/2025:17:40:56 +0700] "POST /database/?script=version HTTP/1.1" 200 -
+::1 - - [03/Aug/2025:17:40:57 +0700] "POST /database/ HTTP/1.1" 302 -
+::1 - - [03/Aug/2025:17:40:57 +0700] "GET /database/?username=root HTTP/1.1" 200 10418
+::1 - - [03/Aug/2025:17:41:05 +0700] "GET /database/?username=root&db=lrv_multikreatif HTTP/1.1" 200 35087
+::1 - - [03/Aug/2025:17:41:05 +0700] "GET /database/?username=root&db=lrv_multikreatif&script=db HTTP/1.1" 200 4899
+::1 - - [03/Aug/2025:17:42:05 +0700] "-" 408 -
+::1 - - [03/Aug/2025:17:43:01 +0700] "GET /database/?username=root HTTP/1.1" 200 10418
+::1 - - [03/Aug/2025:17:43:05 +0700] "GET /database/ HTTP/1.1" 200 5312
+::1 - - [03/Aug/2025:17:43:06 +0700] "GET /database/?username=root HTTP/1.1" 200 10418
+::1 - - [03/Aug/2025:17:43:08 +0700] "GET /database/?username=root&database= HTTP/1.1" 200 14451
+::1 - - [03/Aug/2025:17:43:15 +0700] "POST /database/?username=root&database= HTTP/1.1" 302 -
+::1 - - [03/Aug/2025:17:43:15 +0700] "GET /database/?username=root&db=lrv_pullhair HTTP/1.1" 200 6749
+::1 - - [03/Aug/2025:17:44:15 +0700] "-" 408 -
+::1 - - [03/Aug/2025:18:01:49 +0700] "GET /database/?username=root&db=lrv_pullhair HTTP/1.1" 200 60565
+::1 - - [03/Aug/2025:18:01:49 +0700] "GET /database/?username=root&db=lrv_pullhair&script=db HTTP/1.1" 200 10439
+::1 - - [03/Aug/2025:18:01:52 +0700] "GET /database/?username=root HTTP/1.1" 200 10904
+::1 - - [03/Aug/2025:18:01:54 +0700] "GET /database/?username=root&database= HTTP/1.1" 200 14471
+::1 - - [03/Aug/2025:18:02:02 +0700] "POST /database/?username=root&database= HTTP/1.1" 302 -
+::1 - - [03/Aug/2025:18:02:02 +0700] "GET /database/?username=root&db=lrv_bpkwil3 HTTP/1.1" 200 6754
+::1 - - [03/Aug/2025:18:03:02 +0700] "-" 408 -
+::1 - - [04/Aug/2025:09:10:40 +0700] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025:09:10:42 +0700] "GET /database/ HTTP/1.1" 200 5161
+::1 - - [04/Aug/2025:09:10:44 +0700] "GET /database/adminer-dark.css?v=2795939238 HTTP/1.1" 304 -
+::1 - - [04/Aug/2025:09:10:46 +0700] "POST /database/?script=version HTTP/1.1" 200 -
+::1 - - [04/Aug/2025:09:10:52 +0700] "POST /database/ HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:09:10:52 +0700] "GET /database/?username=root HTTP/1.1" 200 11847
+::1 - - [04/Aug/2025:09:10:55 +0700] "GET /database/?username=root&database= HTTP/1.1" 200 14506
+::1 - - [04/Aug/2025:09:11:05 +0700] "POST /database/?username=root&database= HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:09:11:06 +0700] "GET /database/?username=root&db=lrv_booking_mediatama HTTP/1.1" 200 6960
+::1 - - [04/Aug/2025:09:13:54 +0700] "GET /favicon.ico HTTP/1.1" 404 196
+::1 - - [04/Aug/2025:09:14:03 +0700] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025:09:14:04 +0700] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025:09:14:12 +0700] "GET /database/?username=root&db=lrv_booking_mediatama HTTP/1.1" 200 38408
+::1 - - [04/Aug/2025:09:14:12 +0700] "GET /database/?username=root&db=lrv_booking_mediatama&script=db HTTP/1.1" 200 5403
+::1 - - [04/Aug/2025:09:15:22 +0700] "GET /database/ HTTP/1.1" 200 5309
+::1 - - [04/Aug/2025:09:16:22 +0700] "-" 408 -
+::1 - - [04/Aug/2025:09:17:39 +0700] "POST /database/ HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:09:17:39 +0700] "GET /database/?username=root HTTP/1.1" 200 12423
+::1 - - [04/Aug/2025:09:18:39 +0700] "-" 408 -
+::1 - - [04/Aug/2025:09:32:45 +0700] "GET /database/ HTTP/1.1" 200 5311
+::1 - - [04/Aug/2025:09:32:54 +0700] "GET /database/?username=root&db=lrv_multikreatif HTTP/1.1" 200 35258
+::1 - - [04/Aug/2025:09:32:54 +0700] "GET /database/?username=root&db=lrv_multikreatif&script=db HTTP/1.1" 200 4899
+::1 - - [04/Aug/2025:09:32:59 +0700] "GET /database/?username=root&db=lrv_multikreatif&table=jobs HTTP/1.1" 200 12203
+::1 - - [04/Aug/2025:09:33:02 +0700] "GET /database/?username=root&db=lrv_multikreatif&select=jobs HTTP/1.1" 200 16216
+::1 - - [04/Aug/2025:09:33:36 +0700] "GET /database/?username=root&db=lrv_multikreatif&select=jobs HTTP/1.1" 200 16216
+::1 - - [04/Aug/2025:11:02:20 +0700] "GET /database/?username=root&db=lrv_booking_mediatama HTTP/1.1" 200 38408
+::1 - - [04/Aug/2025:11:02:20 +0700] "GET /database/?username=root&db=lrv_booking_mediatama&script=db HTTP/1.1" 200 5403
+::1 - - [04/Aug/2025:11:02:25 +0700] "GET /database/?username=root&db=lrv_booking_mediatama HTTP/1.1" 200 38408
+::1 - - [04/Aug/2025:11:02:25 +0700] "GET /database/?username=root&db=lrv_booking_mediatama&script=db HTTP/1.1" 200 5403
+::1 - - [04/Aug/2025:11:02:33 +0700] "GET /database/?username=root&db=lrv_booking_mediatama&table=kelas HTTP/1.1" 200 13204
+::1 - - [04/Aug/2025:11:02:34 +0700] "GET /database/?username=root&db=lrv_booking_mediatama&select=kelas HTTP/1.1" 200 48721
+::1 - - [04/Aug/2025:11:03:17 +0700] "GET /database/?username=root&db=lrv_booking_mediatama&sql= HTTP/1.1" 200 14081
+::1 - - [04/Aug/2025:11:03:42 +0700] "POST /database/?username=root&db=lrv_booking_mediatama&sql=UPDATE%20kelas%20SET%20foto%3D%27kelas%2Fweb.jpg%27 HTTP/1.1" 200 15054
+::1 - - [04/Aug/2025:11:04:42 +0700] "-" 408 -
+::1 - - [04/Aug/2025:14:38:06 +0700] "GET /database/?username=root HTTP/1.1" 200 12422
+::1 - - [04/Aug/2025:14:38:06 +0700] "GET /database/adminer-dark.css?v=2795939238 HTTP/1.1" 304 -
+::1 - - [04/Aug/2025:14:38:08 +0700] "GET /database/?username=root&database= HTTP/1.1" 200 14536
+::1 - - [04/Aug/2025:14:38:15 +0700] "POST /database/?username=root&database= HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:14:38:15 +0700] "GET /database/?username=root&db=lrv_garuda_sakti HTTP/1.1" 200 6904
+::1 - - [04/Aug/2025:14:39:07 +0700] "GET /database/?username=root&db=lrv_garuda_sakti HTTP/1.1" 200 6467
+::1 - - [04/Aug/2025:14:40:07 +0700] "-" 408 -
+::1 - - [04/Aug/2025:14:43:49 +0700] "GET /database/?username=root&db=lrv_garuda_sakti HTTP/1.1" 200 35263
+::1 - - [04/Aug/2025:14:43:50 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&script=db HTTP/1.1" 200 4939
+::1 - - [04/Aug/2025:14:44:49 +0700] "-" 408 -
+::1 - - [04/Aug/2025:15:12:29 +0700] "-" 408 -
+::1 - - [04/Aug/2025:15:12:49 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&table=users HTTP/1.1" 200 12655
+::1 - - [04/Aug/2025:15:12:51 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 57365
+::1 - - [04/Aug/2025:15:13:41 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&edit=users&where%5Bid%5D=69 HTTP/1.1" 200 19083
+::1 - - [04/Aug/2025:15:13:46 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&edit=users&where%5Bid%5D=69 HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:15:13:46 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 58198
+::1 - - [04/Aug/2025:15:14:41 +0700] "-" 408 -
+::1 - - [04/Aug/2025:15:14:47 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&edit=users&where%5Bid%5D=69 HTTP/1.1" 200 19083
+::1 - - [04/Aug/2025:15:14:51 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&edit=users&where%5Bid%5D=69 HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:15:14:51 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 58198
+::1 - - [04/Aug/2025:15:15:47 +0700] "-" 408 -
+::1 - - [04/Aug/2025:15:17:06 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:15:17:07 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 57879
+::1 - - [04/Aug/2025:15:18:06 +0700] "-" 408 -
+::1 - - [04/Aug/2025:15:20:01 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 19771
+::1 - - [04/Aug/2025:15:20:27 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 20632
+::1 - - [04/Aug/2025:15:20:38 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:15:20:38 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 58109
+::1 - - [04/Aug/2025:15:20:53 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&edit=users&where%5Bid%5D=69 HTTP/1.1" 200 19082
+::1 - - [04/Aug/2025:15:21:02 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&edit=users&where%5Bid%5D=69 HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:15:21:02 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 58167
+::1 - - [04/Aug/2025:15:22:02 +0700] "-" 408 -
+::1 - - [04/Aug/2025:15:39:38 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&table=users HTTP/1.1" 200 12655
+::1 - - [04/Aug/2025:15:39:45 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&create=users HTTP/1.1" 200 59420
+::1 - - [04/Aug/2025:15:40:10 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 57353
+::1 - - [04/Aug/2025:15:40:15 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&table=bookings HTTP/1.1" 200 13501
+::1 - - [04/Aug/2025:15:40:38 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings HTTP/1.1" 200 113983
+::1 - - [04/Aug/2025:15:41:38 +0700] "-" 408 -
+::1 - - [04/Aug/2025:16:26:30 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&table=bookings HTTP/1.1" 200 13501
+::1 - - [04/Aug/2025:16:26:32 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings HTTP/1.1" 200 113982
+::1 - - [04/Aug/2025:16:26:39 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 56965
+::1 - - [04/Aug/2025:16:27:39 +0700] "-" 408 -
+::1 - - [04/Aug/2025:16:28:02 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 56964
+::1 - - [04/Aug/2025:16:29:02 +0700] "-" 408 -
+::1 - - [04/Aug/2025:16:34:43 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 61935
+::1 - - [04/Aug/2025:16:34:53 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:16:34:53 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 59127
+::1 - - [04/Aug/2025:16:35:53 +0700] "-" 408 -
+::1 - - [04/Aug/2025:16:37:35 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 60281
+::1 - - [04/Aug/2025:16:38:24 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:16:38:24 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 57470
+::1 - - [04/Aug/2025:16:39:24 +0700] "-" 408 -
+::1 - - [04/Aug/2025:16:50:06 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 56965
+::1 - - [04/Aug/2025:16:51:06 +0700] "-" 408 -
+::1 - - [04/Aug/2025:16:52:58 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 58624
+::1 - - [04/Aug/2025:16:53:58 +0700] "-" 408 -
+::1 - - [04/Aug/2025:16:55:42 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 61939
+::1 - - [04/Aug/2025:16:56:42 +0700] "-" 408 -
+::1 - - [04/Aug/2025:20:57:25 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 63632
+::1 - - [04/Aug/2025:20:57:27 +0700] "GET /database/adminer-dark.css?v=2795939238 HTTP/1.1" 304 -
+::1 - - [04/Aug/2025:20:58:25 +0700] "-" 408 -
+::1 - - [04/Aug/2025:21:14:19 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&table=bookings HTTP/1.1" 200 13502
+::1 - - [04/Aug/2025:21:14:21 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings HTTP/1.1" 200 113982
+::1 - - [04/Aug/2025:21:14:24 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 58658
+::1 - - [04/Aug/2025:21:15:19 +0700] "-" 408 -
+::1 - - [04/Aug/2025:21:21:13 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&table=users HTTP/1.1" 200 12655
+::1 - - [04/Aug/2025:21:21:15 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=users HTTP/1.1" 200 58436
+::1 - - [04/Aug/2025:21:21:27 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&table=bookings HTTP/1.1" 200 13502
+::1 - - [04/Aug/2025:21:21:29 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings HTTP/1.1" 200 113982
+::1 - - [04/Aug/2025:21:21:32 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 58657
+::1 - - [04/Aug/2025:21:21:34 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&edit=bookings&where%5Bid%5D=1159 HTTP/1.1" 200 22736
+::1 - - [04/Aug/2025:21:21:41 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&edit=bookings&where%5Bid%5D=1159 HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:21:21:41 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 59749
+::1 - - [04/Aug/2025:21:22:41 +0700] "-" 408 -
+::1 - - [04/Aug/2025:21:26:54 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&edit=bookings&where%5Bid%5D=1159 HTTP/1.1" 200 22753
+::1 - - [04/Aug/2025:21:27:00 +0700] "POST /database/?username=root&db=lrv_garuda_sakti&edit=bookings&where%5Bid%5D=1159 HTTP/1.1" 302 -
+::1 - - [04/Aug/2025:21:27:00 +0700] "GET /database/?username=root&db=lrv_garuda_sakti&select=bookings&page=17 HTTP/1.1" 200 59752
+::1 - - [04/Aug/2025:21:28:00 +0700] "-" 408 -

@@ -4,3 +4,5 @@ mysql/*
 !mysql/readme.md
 apache/*
 !apache/readme.md
+/backup
+/dist
